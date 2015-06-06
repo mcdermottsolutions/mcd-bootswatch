@@ -1,6 +1,7 @@
-function toggleForm()
+function toggleForm(line)
 {
-	var subform = document.getElementById("submission")
+	var subform = document.getElementById("submission");
+	var lineID = line
 
 	if (subform.style.visibility != "visible")
 	{
@@ -10,4 +11,5 @@ function toggleForm()
 	{
 		subform.style.visibility = "hidden";
 	}
+	alert(lineID);
 }
