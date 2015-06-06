@@ -1,10 +1,4 @@
-function hideForm()
-{
-	var subform = document.getElementById("submission")
-	subform.style.visibility = "hidden";
-}
-
-function showForm()
+function toggleForm()
 {
 	var subform = document.getElementById("submission")
 
@@ -16,6 +10,4 @@ function showForm()
 	{
 		subform.style.visibility = "hidden";
 	}
-
-
 }
