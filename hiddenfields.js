@@ -15,11 +15,16 @@ function toggleForm(sentence)
 		submissionForm.style.visibility = "hidden";
 		lastClicked.style.backgroundColor = "inherit";
 	}
-	alert(sentence.id);
 }
 
 function submitAnnotation(text)
 {
 	var annotationText = text.value;
-	alert(annotationText);
+	var submissionForm = document.getElementById("submission");
+
+	submissionForm.style.visibility = "hidden";
+	lastClicked.style.backgroundColor = "inherit";
+	alert(annotationText + " submitted as annotation for sentence " + lastClicked.id + ".");
+	text.value = "";
+
 }

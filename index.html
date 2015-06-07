@@ -39,9 +39,11 @@
         </div>
       
         <div class="col-xs-4" id="submission">
-          <form>
-            <textarea id="textArea"></textarea>
-            <button type="submit" id="submitbutton" onClick="submitAnnotation(textArea)">Submit Annotation</button>
+            <div class="form-group">
+              <label for="annotation">Annotation:</label>
+              <textarea class="form-control" rows="1" id="annotation"></textarea>
+            </div>
+            <button class="btn" type="submit" id="submitbutton" onClick="submitAnnotation(annotation)">Submit Annotation</button>
           </div>
         </div>
       </div>
