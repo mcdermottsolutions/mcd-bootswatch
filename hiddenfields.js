@@ -1,15 +1,25 @@
-function toggleForm(line)
-{
-	var subform = document.getElementById("submission");
-	var lineID = line
+var lastClicked;
 
-	if (subform.style.visibility != "visible")
+function toggleForm(sentence)
+{
+	var submissionForm = document.getElementById("submission");
+
+	if (submissionForm.style.visibility != "visible")
 	{
-		subform.style.visibility = "visible";
+		submissionForm.style.visibility = "visible";
+		sentence.style.backgroundColor = "yellow";
+		lastClicked = sentence;
 	}
 	else
 	{
-		subform.style.visibility = "hidden";
+		submissionForm.style.visibility = "hidden";
+		lastClicked.style.backgroundColor = "inherit";
 	}
-	alert(lineID);
+	alert(sentence.id);
+}
+
+function submitAnnotation(text)
+{
+	var annotationText = text.value;
+	alert(annotationText);
 }
